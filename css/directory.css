@@ -1,0 +1,245 @@
+.directory-accordion { margin-top: 0.5rem; }
+
+.student-directory-toggle,
+.teacher-directory-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  justify-content: flex-start;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: var(--shadow);
+}
+
+.directory-items-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+
+@media (max-width: 1024px) {
+  .directory-items-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .directory-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Student compact accordion cards (do not affect Teachers section) */
+.student-card-accordion {
+  padding: 0.75rem 0.85rem;
+  border-radius: 18px;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.student-card-accordion-toggle {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 0.1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-content: flex-start;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.student-card-icon {
+  display: inline-flex;
+  width: 1.1rem;
+  justify-content: center;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+/* Match Teachers accordion arrows to Students List arrow green */
+.teacher-row-icon,
+.teacher-directory-toggle .student-list-icon {
+  color: var(--accent);
+}
+
+
+.student-card-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.student-card-accordion-panel {
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+}
+
+.student-card-content {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.student-card-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.student-card-row .label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  flex: 0 0 auto;
+}
+
+.student-card-row .value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.student-card-quote {
+  margin-top: 0.2rem;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.35;
+  font-size: 0.9rem;
+}
+
+/* Keep existing teacher directory styles */
+.student-directory-row,
+.teacher-directory-row {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+}
+
+.student-directory-row-toggle,
+.teacher-directory-row-toggle {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  justify-content: flex-start;
+  font-weight: 700;
+}
+
+/* Match Students List header arrow to individual student card arrow green */
+.student-directory-toggle .student-list-icon {
+  color: var(--accent);
+}
+
+
+.student-directory-panel,
+.teacher-directory-panel {
+  margin-top: 0.75rem;
+  padding: 1rem 1rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+}
+
+/* Scroll container inside the Students List accordion: shows ~10 rows */
+.student-directory-panel .students-table-scroll {
+  max-height: 360px; /* fixed table body height for internal scrolling */
+  overflow-y: auto;
+}
+
+.student-row-title,
+.student-directory-name,
+.teacher-directory-panel h3 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .student-directory-toggle,
+  .teacher-directory-toggle {
+    padding: 1rem 1.1rem;
+  }
+}
+
+/* Students table styles for the redesigned roster */
+.students-panel .table-scroll {
+  overflow: auto;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  min-width: 320px;
+}
+
+.students-table thead th {
+  text-align: left;
+  padding: 0.85rem 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(92,181,105,0.10), rgba(92,181,105,0.06));
+  border-bottom: 1px solid rgba(92,181,105,0.18);
+}
+
+.students-table tbody td {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Narrower roll number column */
+.students-table td.roll,
+.students-table th.roll {
+  width: 11%;
+  white-space: nowrap;
+}
+
+/* Ensure names remain single-line and rows keep uniform height */
+.students-table td.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover effect on capable devices */
+@media (hover: hover) {
+  .students-table tbody tr:hover {
+    background: rgba(255,255,255,0.02);
+  }
+}
+
+/* Mobile: keep the table readable and allow horizontal scroll if needed */
+@media (max-width: 600px) {
+  .students-table thead th {
+    padding: 0.7rem 0.6rem;
+  }
+  .students-table tbody td {
+    padding: 0.6rem 0.6rem;
+    font-size: 0.96rem;
+  }
+}
+
+
