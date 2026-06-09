@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class XII C • Computer Science | 2026-27</title>
+  <meta name="description" content="Welcome to the Class XII C portal for Computer Science students with schedule, directory, calendar, gallery, and announcements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/directory.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#home">Class XII C</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#students">Students</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#timetable">Timetable</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+      <div class="mobile-nav-overlay-top">
+        <div class="mobile-nav-overlay-brand">CLASS XII C</div>
+        <button class="overlay-close" type="button" id="mobileNavClose" aria-label="Close navigation menu">×</button>
+      </div>
+
+      <ul class="overlay-links" aria-label="Mobile navigation links">
+        <li><a href="#home" data-mobile-nav-link="home">Home</a></li>
+        <li><a href="#about" data-mobile-nav-link="about">About</a></li>
+        <li><a href="#students" data-mobile-nav-link="students">Students</a></li>
+        <li><a href="#teachers" data-mobile-nav-link="teachers">Teachers</a></li>
+        <li><a href="#timetable" data-mobile-nav-link="timetable">Timetable</a></li>
+        <li><a href="#gallery" data-mobile-nav-link="gallery">Gallery</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-carousel" aria-label="Feature image carousel"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">Class XII C • Computer Science</span>
+        <h1>XII C</h1>
+        <p>Computer Science — Academic Year 2026–27</p>
+      </div>
+    </section>
+
+    <section id="today" class="section today-schedule-section">
+      <div class="section-intro">
+        <span class="eyebrow">Today</span>
+        <h2>Class Schedule</h2>
+      </div>
+      <div class="schedule-panel" id="todaySchedule" aria-live="polite">
+        <div class="schedule-card">
+          <h3>Loading today's timetable…</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="countdown" class="section countdown-section">
+      <div class="section-intro">
+        <span class="eyebrow">Board Exams</span>
+        <h2>Countdown</h2>
+      </div>
+      <div class="countdown-card card-panel">
+        <div class="countdown-value" id="countdownDays">—</div>
+        <p id="countdownText">Days Until CBSE Class XII Board Examinations</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-intro">
+        <span class="eyebrow">Who We Are</span>
+        <h2>XII C</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy card-panel">
+          <p>We are Class XII C (Computer Science) of Kendriya Vidyalaya No. 1 Naval Base, Kochi.</p>
+          <p>This website serves as a digital space for our class, bringing together our timetable, important information, gallery, and memories from the academic year 2026–27.</p>
+          <p>A simple record of our journey, achievements, and experiences as the batch of XII C.</p>
+          <div class="about-links">
+            <a href="https://christy-404.github.io/ashoka-house-website/" target="_blank" rel="noreferrer">Ashoka House</a>
+            <a href="https://no1cochin.kvs.ac.in/" target="_blank" rel="noreferrer">School</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="students" class="section students-section">
+      <div class="section-intro">
+        <span class="eyebrow">Meet the Batch</span>
+        <h2>38 Students</h2>
+      </div>
+      <p class="section-description">The students of Class XII C for the academic year 2026–27.</p>
+
+      <div class="directory-accordion" id="studentDirectory" aria-live="polite">
+        <button class="student-directory-toggle" type="button" id="studentDirectoryToggle" aria-expanded="false" aria-controls="studentDirectoryItems">
+          <span class="student-list-icon" aria-hidden="true">▼</span>
+          Students List
+        </button>
+
+        <div id="studentDirectoryItems" hidden>
+          <div class="student-directory-panel card-panel">
+            <div class="students-table-scroll">
+              <table class="students-table" id="studentTable" aria-label="Class roster">
+                <thead>
+                  <tr>
+                    <th scope="col" class="roll">Roll No.</th>
+                    <th scope="col" class="name">Student Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Rows injected by js/students.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="teachers" class="section teachers-section">
+      <div class="section-intro">
+        <span class="eyebrow">Mentorship</span>
+        <h2>Our Teachers</h2>
+      </div>
+      <p class="section-description">The teachers who guide and support Class XII C throughout the academic year.</p>
+      <div class="directory-accordion" id="teacherDirectory" aria-live="polite">
+        <button class="teacher-directory-toggle" type="button" id="teacherDirectoryToggle" aria-expanded="false" aria-controls="teacherDirectoryItems">
+          <span class="student-list-icon" aria-hidden="true">▼</span>
+          Teachers List
+        </button>
+        <div id="teacherDirectoryItems" hidden>
+          <div class="directory-items-grid" id="teacherGrid" aria-live="polite"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="timetable" class="section timetable-section">
+      <div class="section-intro">
+        <span class="eyebrow">Academic Rhythm</span>
+        <h2>Timetable</h2>
+      </div>
+      <div class="timetable-layout">
+        <div class="timetable-panel">
+          <h3>Weekly Timetable</h3>
+        <div class="table-scroll"><table class="timetable-table" id="weeklyTimetable" aria-label="Weekly class timetable"></table></div>
+
+          <div id="weeklyTimetableMobile" class="mobile-timetable-accordion" aria-label="Weekly timetable (mobile)" hidden>
+            <!-- Mobile accordion injected by js/schedule.js -->
+          </div>
+
+
+          <div class="timetable-lunch" aria-label="Lunch Break">
+            <div class="timetable-lunch-label">Lunch Break</div>
+            <div class="timetable-lunch-time">11:30 AM – 12:00 PM</div>
+          </div>
+
+        </div>
+        <div class="timetable-panel">
+          <h3>Period Timings</h3>
+          <ul class="period-list" id="periodSchedule"></ul>
+          <div class="period-schedule-legend">
+            <span class="legend-dot"></span>
+            <span class="legend-text">Current Period</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-intro">
+
+        <span class="eyebrow">Shared Moments</span>
+        <h2>Our Story</h2>
+      </div>
+      <p class="section-description">Memories from the year—class moments, celebrations, collaborations, and the everyday that becomes unforgettable.</p>
+      <div class="gallery-controls" role="tablist" aria-label="Gallery views">
+        <button class="gallery-tab active" data-tab="photos" role="tab" aria-selected="true">Photos</button>
+        <button class="gallery-tab" data-tab="videos" role="tab" aria-selected="false">Videos</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid" role="grid"></div>
+      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close viewer">×</button>
+        <div class="lightbox-viewport">
+          <img id="lightboxImage" alt="Gallery image" />
+          <video id="lightboxVideo" controls></video>
+        </div>
+        <div class="lightbox-controls">
+          <button id="lightboxPrev" aria-label="Previous">‹ Prev</button>
+          <button id="lightboxNext" aria-label="Next">Next ›</button>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="footer-content">
+      <div>
+        <p class="footer-brand">Class XII C • Computer Science</p>
+        <p>Academic Year 2026–27</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://no1cochin.kvs.ac.in/" target="_blank" rel="noreferrer">School Website</a>
+        <a href="https://christy-404.github.io/ashoka-house-website/" target="_blank" rel="noreferrer">Ashoka House</a>
+        <a href="mailto:class12c@ashokahouse.edu">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Ashoka House • Class XII C. All rights reserved.</p>
+  </footer>
+
+  
+
+  <script src="js/carousel.js"></script>
+  <script src="js/students.js"></script>
+
+  <script src="js/teachers.js"></script>
+
+  <script src="js/schedule.js"></script>
+
+  <script src="js/countdown.js"></script>
+  <script src="js/gallery.js"></script>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
