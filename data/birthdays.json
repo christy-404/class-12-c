@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Riya Sharma",
+    "date": "2008-06-03",
+    "photo": "assets/students/student2.svg"
+  },
+  {
+    "name": "Arjun Mehta",
+    "date": "2008-07-14",
+    "photo": "assets/students/student1.svg"
+  },
+  {
+    "name": "Anaya Rao",
+    "date": "2008-09-11",
+    "photo": "assets/students/student4.svg"
+  },
+  {
+    "name": "Karan Desai",
+    "date": "2008-11-20",
+    "photo": "assets/students/student6.svg"
+  },
+  {
+    "name": "Priya Singh",
+    "date": "2008-12-02",
+    "photo": "assets/students/student5.svg"
+  }
+]

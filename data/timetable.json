@@ -1,0 +1,75 @@
+{
+  "week": {
+    "monday": [
+      {"period": "Period 1", "subject": "PHY"},
+      {"period": "Period 2", "subject": "ENG"},
+      {"period": "Period 3", "subject": "PHY/CHEM PRACT"},
+      {"period": "Period 4", "subject": "PHY/CHEM PRACT"},
+      {"period": "Period 5", "subject": "CS"},
+      {"period": "Period 6", "subject": "MATHS"},
+      {"period": "Period 7", "subject": "WE"},
+      {"period": "Period 8", "subject": "CHEM"}
+    ],
+    "tuesday": [
+      {"period": "Period 1", "subject": "PHY"},
+      {"period": "Period 2", "subject": "CS"},
+      {"period": "Period 3", "subject": "PHY/CS PRACT"},
+      {"period": "Period 4", "subject": "PHY/CS PRACT"},
+      {"period": "Period 5", "subject": "MATHS"},
+      {"period": "Period 6", "subject": "CHEM"},
+      {"period": "Period 7", "subject": "ENG"},
+      {"period": "Period 8", "subject": "MATHS"}
+    ],
+    "wednesday": [
+      {"period": "Period 1", "subject": "PHY"},
+      {"period": "Period 2", "subject": "MATHS"},
+      {"period": "Period 3", "subject": "ENG"},
+      {"period": "Period 4", "subject": "CS"},
+      {"period": "Period 5", "subject": "CHEM/CS PRACT"},
+      {"period": "Period 6", "subject": "CHEM/CS PRACT"},
+      {"period": "Period 7", "subject": "CHEM"},
+      {"period": "Period 8", "subject": "PHY"}
+    ],
+    "thursday": [
+      {"period": "Period 1", "subject": "PHY"},
+      {"period": "Period 2", "subject": "CHEM"},
+      {"period": "Period 3", "subject": "MATHS"},
+      {"period": "Period 4", "subject": "LIB"},
+      {"period": "Period 5", "subject": "ENG"},
+      {"period": "Period 6", "subject": "GST"},
+      {"period": "Period 7", "subject": "CS"},
+      {"period": "Period 8", "subject": "CHEM"}
+    ],
+    "friday": [
+      {"period": "Period 1", "subject": "PHY"},
+      {"period": "Period 2", "subject": "MATHS"},
+      {"period": "Period 3", "subject": "CS"},
+      {"period": "Period 4", "subject": "MATHS"},
+      {"period": "Period 5", "subject": "ENG"},
+      {"period": "Period 6", "subject": "PHE"},
+      {"period": "Period 7", "subject": "CS"},
+      {"period": "Period 8", "subject": "CHEM"}
+    ],
+    "saturday": [
+      {"period": "Period 1", "subject": "PHY"},
+      {"period": "Period 2", "subject": "ENG"},
+      {"period": "Period 3", "subject": "MATHS"},
+      {"period": "Period 4", "subject": "CS"},
+      {"period": "Period 5", "subject": "CHEM"},
+      {"period": "Period 6", "subject": "MATHS"},
+      {"period": "Period 7", "subject": "CCA"},
+      {"period": "Period 8", "subject": "CCA"}
+    ]
+  },
+  "periodTimes": [
+    {"period": "Period 1", "time": "8:50 AM - 9:30 AM"},
+    {"period": "Period 2", "time": "9:30 AM - 10:10 AM"},
+    {"period": "Period 3", "time": "10:10 AM - 10:50 AM"},
+    {"period": "Period 4", "time": "10:50 AM - 11:30 AM"},
+    {"period": "Period 5", "time": "12:00 PM - 12:40 PM"},
+    {"period": "Period 6", "time": "12:40 PM - 1:20 PM"},
+    {"period": "Period 7", "time": "1:20 PM - 2:00 PM"},
+    {"period": "Period 8", "time": "2:00 PM - 2:40 PM"}
+  ]
+}
+
